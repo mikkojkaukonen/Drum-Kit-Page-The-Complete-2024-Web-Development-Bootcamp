@@ -100,22 +100,13 @@ footer a:hover {
   h1 {
     font-size: 1.3rem;
   }
-
-  /* Center-align the drum buttons using Flexbox for a responsive layout */
-  .set{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0%;
-  }
   .drum {
-    width: 20vh;
-    height: 20vh;
-    font-size: 3rem;
+    width: 75px;
+    height: 75px;
+    font-size: 1.3rem;
   }
   footer {
     font-size: 0.8rem;
   }
+
 }
