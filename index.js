@@ -1,22 +1,22 @@
-
+// Get the total number of drum buttons
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
+// Add click event listeners to each drum button
 for (var i = 0; i < numberOfDrumButtons; i++) {
-
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
-
         var buttonInnerHTML = this.innerHTML;
-        keyboardSuonds(buttonInnerHTML);
-        buttonAnimation(buttonInnerHTML);
-
+        keyboardSuonds(buttonInnerHTML);    // Play sound based on button clicked
+        buttonAnimation(buttonInnerHTML);   // Trigger button animation
     });
 }
 
+// Detect keyboard press and trigger sound and animation
 document.addEventListener("keydown", function(event){
-    keyboardSuonds(event.key);
-    buttonAnimation(event.key);
+    keyboardSuonds(event.key);      
+    buttonAnimation(event.key);     
 }) ;
 
+// Play specific sound based on the key input
 function keyboardSuonds(key){
 
     switch (key) {
@@ -61,13 +61,13 @@ function keyboardSuonds(key){
 }
 
 function buttonAnimation(currentKey) {
-    
+
+    // Add animation effect to the pressed button
     var activeButton = document.querySelector("." + currentKey);
     activeButton.classList.add("pressed");
     
+    // Remove the animation after a short delay
     setTimeout(function(){
         activeButton.classList.remove("pressed")
     }, 100);
-
-
 }
