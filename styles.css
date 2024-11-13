@@ -88,3 +88,6 @@ footer a:hover {
   margin: 10px;
   background-color: white;
 }
+.drum:hover {
+  opacity: 0.8;
+}
