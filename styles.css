@@ -1,8 +1,10 @@
+/* Center-align text and set background image for the entire page */
 body {
   text-align: center;
   background-image: url(./images/drums-7056501_1280.jpg);
 }
 
+/* Style for main title */
 h1 {
   font-size: 5rem;
   color: #f3eaf0;
@@ -13,6 +15,7 @@ h1 {
 
 }
 
+/* Style for footer text */
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
@@ -20,6 +23,7 @@ footer {
   opacity: 0.8;
 }
 
+/* Background images for each drum button based on class */
 .w {
   background-image: url(./images/tom1.png);
 }
@@ -48,15 +52,18 @@ footer {
   background-image: url(./images/snare.png);
 }
 
+/* Drum button container alignment */
 .set {
   margin: 10% auto;
 }
 
+/* Visual effect for button when pressed */
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
 }
 
+/* General style for each drum button */
 .drum {
   outline: none;
   border: 5px solid rgb(35, 33, 33);
