@@ -21,6 +21,9 @@ footer {
   font-family: sans-serif;
   background-color: rgb(35, 33, 33);
   opacity: 0.8;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer a {
   color: white; 
@@ -93,22 +96,26 @@ footer a:hover {
 }
 
 /* Scale down the main title font size for smaller screens */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   h1 {
     font-size: 1.3rem;
   }
+
   /* Center-align the drum buttons using Flexbox for a responsive layout */
   .set{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0%;
   }
   .drum {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     font-size: 1.3rem;
   }
   footer {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
